@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins" sans-serif;
+}
+
+#quizapp {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+main {
+  background-color: blueviolet;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-content {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  gap: 30px;
+  margin-bottom: 250px;
+}
+
+.spnQtd {
+  text-align: end;
+}
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.question {
+  font-size: 90%;
+  font-weight: 600;
+  color: #000000;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+button {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.finish {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.finish button {
+  text-align: center;
+}
+
+/* ficar piscando cor do main */
+
+@keyframes changeColor {
+  20% {
+    background-color: #ff0000;
+  }
+  50% {
+    background-color: #33ff00;
+  }
+  100% {
+    background-color: #001eff;
+  }
+  20% {
+    background-color: #ff0000;
+  }
+}
+
+main {
+  animation: changeColor 8s infinite;
+}

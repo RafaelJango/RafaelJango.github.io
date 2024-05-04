@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="/src/styles/contato.css" />
+    <link rel="stylesheet" href="/src/styles/header.css" />
+    <title>Sobre Contato</title>
+  </head>
+  <body>
+    <header id="contatao">
+      <nav id="navbar">
+        <i class="fa-solid fa-bicycle" id="nav_logo"> BIKECITY</i>
+
+        <ul id="nav_list">
+          <li class="nav-item">
+            <a href="/index.html">Início</a>
+          </li>
+          <li class="nav-item active">
+            <a href="/contato.html">Sobre contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Contato</h1>
+    <p>Entre em contato conosco através do formulário abaixo:</p>
+    <form action="enviar.php" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="mensagem">Telefone:</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+      <div class="btn-contato">
+        <button class="btn-default" type="submit">Enviar</button>
+      </div>
+    </form>
+
+    <footer>
+      <p>&copy; BIKECITY 2022 - Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
