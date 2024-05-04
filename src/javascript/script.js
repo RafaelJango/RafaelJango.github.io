@@ -56,7 +56,7 @@ function validate() {
   let senha = document.getElementById("password").value;
 
   if (usuario === "admin@email.com" && senha === "admin123") {
-    window.open("quiz.html")
+    window.open("QUIZ.html")
   } else {
     alert("usuario/senha invalídos")
   }
